@@ -22,6 +22,10 @@ export const mutations: MutationTree<RootState> = {
 }
 
 export const actions: ActionTree<RootState, RootState> = {
+  testing({commit}){
+    commit('changeDescription', 'other description')
+  },
+
   nuxtServerInit ({ commit }, _context: Context) {
     commit(MutationType.CHANGE_DESCRIPTION, "I'm defined by server side")
   },

@@ -32,9 +32,14 @@
           </push-button>
         </n-link>
         <n-link to="/icon">
-          <push-button theme="whiteRight">
+          <push-button theme="whiteMid">
             icons
           </push-button>
+        </n-link>
+        <n-link :to="{name : 'resume'}">
+            <push-button theme="whiteRight">
+              Resume
+            </push-button>
         </n-link>
       </div>
     </div>
@@ -56,7 +61,6 @@ export default Vue.extend({
   },
   mounted () {
     this.get(this.count)
-    console.log('test')
   },
   methods: {
     async get (count: number): Promise<void> {

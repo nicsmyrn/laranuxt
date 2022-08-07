@@ -26,4 +26,28 @@ export interface User {
   avatar: string
 }
 
+export interface Skill {
+  id : number,
+  label : string,
+  level : number,
+  user_id : number
+}
+
+export interface Work {
+  id : number,
+  job_title : string,
+  employer  : string,
+  city      : string,
+  start_date: string,
+  end_date  : string
+}
+
+export interface Info{
+  user_id : number,
+  professional_summary : string,
+  city: string,
+  zip : string,
+  phone : string
+}
+
 export type Users = Array<User>
